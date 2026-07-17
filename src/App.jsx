@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { C } from "./theme.js";
 import ClusteringLab from "./tools/ClusteringLab.jsx";
 import Correlation from "./tools/Correlation.jsx";
+import Crosstab from "./tools/Crosstab.jsx";
 
 /* Hash routing on purpose: GitHub Pages serves static files and has no rewrite
  * rules, so #/correlation survives a refresh and a bookmark where /correlation
@@ -16,8 +17,8 @@ const TOOLS = [
   },
   {
     hash: "#/crosstab", title: "Cross-tabulation", module: "Module 9", note: "Note A9",
-    blurb: "Two categorical variables. Observed against expected, chi-square, residuals — and whether the test is valid at all.",
-    ready: false,
+    blurb: "Two categorical variables. Observed against expected, chi-square, residuals and Cramér's V — and the expected counts you must check before you read the p.",
+    ready: true, el: Crosstab,
   },
   {
     hash: "#/correlation", title: "Correlation & regression", module: "Module 9", note: "Note B9",
