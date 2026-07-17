@@ -115,6 +115,13 @@ export function tDist2T(t, df) {
   return betai(df / 2, 0.5, df / (df + t * t));
 }
 
+/** Upper-tail p for an F statistic — Excel's F.DIST.RT(F; d1; d2). */
+export function fDistRT(F, d1, d2) {
+  if (F <= 0) return 1;
+  if (d1 <= 0 || d2 <= 0) return NaN;
+  return betai(d2 / 2, d1 / 2, d2 / (d2 + d1 * F));
+}
+
 /** p-value of a correlation. Note B9 §3.2. */
 export function pOfR(r, n) {
   if (n < 3) return NaN;

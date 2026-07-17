@@ -4,6 +4,7 @@ import ClusteringLab from "./tools/ClusteringLab.jsx";
 import Correlation from "./tools/Correlation.jsx";
 import Crosstab from "./tools/Crosstab.jsx";
 import Univariate from "./tools/Univariate.jsx";
+import Regression from "./tools/Regression.jsx";
 
 /* Hash routing on purpose: GitHub Pages serves static files and has no rewrite
  * rules, so #/correlation survives a refresh and a bookmark where /correlation
@@ -25,6 +26,11 @@ const TOOLS = [
     hash: "#/correlation", title: "Correlation & regression", module: "Module 9", note: "Note B9",
     blurb: "Two interval variables. Pearson and Spearman, every simple regression, and the scatter with its fitted line.",
     ready: true, el: Correlation,
+  },
+  {
+    hash: "#/regression", title: "Multiple regression", module: "Module 10", note: "Note A10",
+    blurb: "Several predictors at once, holding the others constant — and interaction terms, to test whether two variables reinforce each other.",
+    ready: true, el: Regression,
   },
   {
     hash: "#/clustering", title: "Clustering", module: "Module 11", note: "Note A11",
