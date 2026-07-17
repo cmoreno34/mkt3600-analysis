@@ -3,6 +3,7 @@ import { C } from "./theme.js";
 import ClusteringLab from "./tools/ClusteringLab.jsx";
 import Correlation from "./tools/Correlation.jsx";
 import Crosstab from "./tools/Crosstab.jsx";
+import Univariate from "./tools/Univariate.jsx";
 
 /* Hash routing on purpose: GitHub Pages serves static files and has no rewrite
  * rules, so #/correlation survives a refresh and a bookmark where /correlation
@@ -12,8 +13,8 @@ import Crosstab from "./tools/Crosstab.jsx";
 const TOOLS = [
   {
     hash: "#/univariate", title: "Univariate analysis", module: "Module 8", note: "Note A8",
-    blurb: "One variable at a time: means, medians, frequencies, histograms, and the shape of a distribution.",
-    ready: false,
+    blurb: "One variable at a time: means, medians, frequencies, histograms, the shape of a distribution, and entropy for categories.",
+    ready: true, el: Univariate,
   },
   {
     hash: "#/crosstab", title: "Cross-tabulation", module: "Module 9", note: "Note A9",
