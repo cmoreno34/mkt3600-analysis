@@ -1,4 +1,4 @@
-/* Statistics for the correlation & regression tool — MKT 3600.
+/* Statistics for the correlation & regression tool — Marketing Research.
  *
  * Every formula here is the one technical note B9 v3.0 teaches, and the whole
  * file is checked against the note's worked example by src/lib/stats.test.js:

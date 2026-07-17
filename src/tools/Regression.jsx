@@ -4,7 +4,7 @@ import { readSpreadsheet } from "../lib/parse.js";
 import { classify } from "../lib/univariate.js";
 import { multipleRegression } from "../lib/mregression.js";
 
-/* Multiple regression — MKT 3600, technical note A10 (module 10).
+/* Multiple regression — Marketing Research, technical note A10 (module 10).
  *
  * Pick one Y and several X's, and add interaction terms (X_i × X_j). The whole
  * point of A10 is that an interaction is invisible to a bivariate view: hold
@@ -123,7 +123,7 @@ export default function Regression() {
   }
 
   function exportCSV() {
-    const rows = [["MKT 3600 — multiple regression"], ["file", file || ""], ["Y", cols[yi]],
+    const rows = [["Marketing Research — multiple regression"], ["file", file || ""], ["Y", cols[yi]],
       ["predictors", xs.map((i) => cols[i]).join(" ; ")],
       ["interactions", inters.map(([a, b]) => `${cols[a]}×${cols[b]}`).join(" ; ")],
       ["n", model.n], ["R2", model.r2], ["adjusted R2", model.r2adj], ["F", model.F], ["p(F)", model.pF], [],

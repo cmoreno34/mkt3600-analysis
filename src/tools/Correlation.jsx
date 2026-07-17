@@ -3,7 +3,7 @@ import { C, inp, slabel } from "../theme.js";
 import { readSpreadsheet, pairwise } from "../lib/parse.js";
 import { pearson, spearman, pOfR, regression, classifyColumn } from "../lib/stats.js";
 
-/* Correlation & simple regression — MKT 3600, technical note B9.
+/* Correlation & simple regression — Marketing Research, technical note B9.
  *
  * What this tool does, per the note's tool callout: computes Spearman and
  * Pearson and every possible simple regression, discarding dichotomous and
@@ -118,7 +118,7 @@ export default function Correlation() {
   }, [pair, stats, cols, xi, yi]);
 
   function exportCSV() {
-    const rows = [["MKT 3600 — correlation & simple regression"], ["file", file || ""], [],
+    const rows = [["Marketing Research — correlation & simple regression"], ["file", file || ""], [],
       ["X", cols[xi]], ["Y", cols[yi]], ["n", stats.n], [],
       ["Pearson r", stats.r], ["Spearman rs", stats.rs], ["p (two-tailed)", stats.p], [],
       ["slope", stats.reg.slope], ["intercept", stats.reg.intercept], ["R2", stats.reg.r2],

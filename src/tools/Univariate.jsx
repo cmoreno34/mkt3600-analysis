@@ -3,7 +3,7 @@ import { C, inp, slabel } from "../theme.js";
 import { readSpreadsheet } from "../lib/parse.js";
 import { classify, numericSummary, categoricalSummary } from "../lib/univariate.js";
 
-/* Univariate analysis — MKT 3600, technical note A8.
+/* Univariate analysis — Marketing Research, technical note A8.
  *
  * One variable at a time. The tool detects whether it is numerical or
  * categorical and shows the right block — it will not offer a mean on a label.
@@ -88,7 +88,7 @@ export default function Univariate() {
   function exportCSV() {
     let rows;
     if (num) {
-      rows = [["MKT 3600 — univariate analysis"], ["file", file || ""], ["variable", cols[sel]], ["type", "numeric"], ["n", num.n], [],
+      rows = [["Marketing Research — univariate analysis"], ["file", file || ""], ["variable", cols[sel]], ["type", "numeric"], ["n", num.n], [],
         ["mean", num.mean], ["median", num.median], ["mode", num.mode.value], [],
         ["min", num.min], ["Q1", num.q1], ["median", num.median], ["Q3", num.q3], ["max", num.max],
         ["D1", num.d1], ["D9", num.d9], ["range", num.range], ["IQR", num.iqr], [],
@@ -97,7 +97,7 @@ export default function Univariate() {
         ["FREQUENCY TABLE"], ["class from", "class to", "count", "rel %", "cum count", "cum rel %"],
         ...num.freq.map((b) => [b.from, b.to, b.count, b.rel, b.cumCount, b.cumRel])];
     } else {
-      rows = [["MKT 3600 — univariate analysis"], ["file", file || ""], ["variable", cols[sel]], ["type", "categorical"], ["n", cat.n], [],
+      rows = [["Marketing Research — univariate analysis"], ["file", file || ""], ["variable", cols[sel]], ["type", "categorical"], ["n", cat.n], [],
         ["mode", cat.mode.value], ["mode share %", cat.mode.pct],
         ["entropy (bits)", cat.entropy.H], ["max entropy log2(k)", cat.entropy.max], ["% of max", cat.entropy.pct], [],
         ["FREQUENCY TABLE"], ["category", "count", "%"],

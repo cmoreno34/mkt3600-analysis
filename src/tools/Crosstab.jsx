@@ -3,7 +3,7 @@ import { C, inp, slabel } from "../theme.js";
 import { readSpreadsheet } from "../lib/parse.js";
 import { crosstab, analyse, classifyCategorical } from "../lib/crosstab.js";
 
-/* Cross-tabulation & chi-square — MKT 3600, technical note A9.
+/* Cross-tabulation & chi-square — Marketing Research, technical note A9.
  *
  * Builds the table, the expected counts, the statistic, the residuals and
  * Cramér's V, and reports the smallest expected count and how many cells fall
@@ -56,7 +56,7 @@ export default function Crosstab() {
   }, [tab]);
 
   function exportCSV() {
-    const rows = [["MKT 3600 — cross-tabulation & chi-square"], ["file", file || ""],
+    const rows = [["Marketing Research — cross-tabulation & chi-square"], ["file", file || ""],
       ["rows", cols[ri]], ["columns", cols[ci]], ["n", a.n], [],
       ["OBSERVED"], ["", ...tab.colVals],
       ...tab.rowVals.map((r, i) => [r, ...tab.O[i]]), [],

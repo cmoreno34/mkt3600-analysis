@@ -61,7 +61,7 @@ function Landing() {
       <style>{`a{text-decoration:none} ::-webkit-scrollbar{width:6px;background:transparent} ::-webkit-scrollbar-thumb{background:#252836;border-radius:3px}`}</style>
       <div style={{ maxWidth: 880, margin: "0 auto", padding: "56px 24px 72px" }}>
         <div style={{ fontFamily: "monospace", fontSize: 11, color: C.acc, letterSpacing: "2px", marginBottom: 10 }}>
-          MKT 3600 · MARKETING RESEARCH
+          MARKETING RESEARCH
         </div>
         <h1 style={{ fontSize: 30, margin: "0 0 12px", fontWeight: 600 }}>Analysis tools</h1>
         <p style={{ color: C.mut, fontSize: 14, lineHeight: 1.7, maxWidth: 620, margin: "0 0 8px" }}>
@@ -100,7 +100,7 @@ function Landing() {
         </div>
 
         <p style={{ color: C.mut, fontSize: 11, marginTop: 40, lineHeight: 1.7 }}>
-          César Moreno Pascual, PhD · Built for MKT 3600. Source:{" "}
+          César Moreno Pascual, PhD · Built for Marketing Research. Source:{" "}
           <a href="https://github.com/cmoreno34/mkt3600-analysis" style={{ color: C.acc }}>github.com/cmoreno34/mkt3600-analysis</a>
         </p>
       </div>

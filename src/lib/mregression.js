@@ -1,4 +1,4 @@
-/* Multiple linear regression — MKT 3600, technical note A10 (module 10).
+/* Multiple linear regression — Marketing Research, technical note A10 (module 10).
  *
  * The new tool of the set: module 10 is the only quantitative module without
  * one, and activity A10 (the TechVista case) turns on an interaction effect

@@ -1,4 +1,4 @@
-/* Univariate analysis — MKT 3600, technical note A8.
+/* Univariate analysis — Marketing Research, technical note A8.
  *
  * Checked against the note's worked example by src/lib/univariate.test.js,
  * on Hours_Per_Week from the music survey (n = 100): mean 7.42, median 7,
