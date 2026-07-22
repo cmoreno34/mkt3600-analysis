@@ -5,6 +5,7 @@ import Correlation from "./tools/Correlation.jsx";
 import Crosstab from "./tools/Crosstab.jsx";
 import Univariate from "./tools/Univariate.jsx";
 import Regression from "./tools/Regression.jsx";
+import Logistic from "./tools/Logistic.jsx";
 
 /* Hash routing on purpose: GitHub Pages serves static files and has no rewrite
  * rules, so #/correlation survives a refresh and a bookmark where /correlation
@@ -31,6 +32,11 @@ const TOOLS = [
     hash: "#/regression", title: "Multiple regression", module: "Module 10", note: "Note A10",
     blurb: "Several predictors at once, holding the others constant — and interaction terms, to test whether two variables reinforce each other.",
     ready: true, el: Regression,
+  },
+  {
+    hash: "#/logistic", title: "Logistic regression", module: "Module 9", note: "Note B9 §9",
+    blurb: "A yes/no outcome — buy or not, churn or stay. Odds ratios, the fitted S-curve, and how well the model classifies.",
+    ready: true, el: Logistic,
   },
   {
     hash: "#/clustering", title: "Clustering", module: "Module 11", note: "Note A11",
